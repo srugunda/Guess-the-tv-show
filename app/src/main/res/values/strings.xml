@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Guess The TV Show</string>
+
+    <string name="alert_button_label">Alert</string>
+    <string name="hello_world_text">Hello World! Tap to test the alert:</string>
+    <string name="ok_button">OK</string>
+    <string name="cancel_button">Cancel</string>
+</resources>
