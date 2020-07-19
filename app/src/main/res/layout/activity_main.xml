@@ -6,13 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/play_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="70dp"
+        android:text="Play"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:onClick="playGame"
+        android:background="@drawable/rounded_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/button_daily_challenge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daily Challenge"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/rounded_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/play_button"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/button_get_hints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Hints"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:background="@drawable/rounded_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_daily_challenge" />
 </androidx.constraintlayout.widget.ConstraintLayout>
